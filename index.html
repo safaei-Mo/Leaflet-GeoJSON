@@ -72,7 +72,7 @@ function onMapClick(e) {
 }
 
 map.on('click', onMapClick)
-fetch('map.geojson')
+fetch('Mega_Cities.geojson')
  .then(response => response.json())
  .then(data => {
    L.geoJSON(data).addTo(map);
